@@ -29,8 +29,8 @@ $log.name = 'webshot';
     const page = await browser.newPage();
     const [width, height] = args.resolution;
     await page.setViewport({
-      width: width / args.scale,
-      height: height / args.scale,
+      width: Math.floor(width / args.scale),
+      height: Math.floor(height / args.scale),
       deviceScaleFactor: args.scale,
     });
     $log.info(`[${url}] Browsing page ...`);

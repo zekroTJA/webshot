@@ -1,0 +1,25 @@
+{
+  "name": "webshot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node ./dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/argparse": "^2.0.10",
+    "@types/node": "^16.7.1",
+    "@types/puppeteer-core": "^5.4.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@tsed/logger": "^5.17.0",
+    "argparse": "^2.0.1",
+    "puppeteer": "^10.2.0",
+    "puppeteer-core": "^10.2.0"
+  }
+}
